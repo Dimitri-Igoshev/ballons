@@ -1,0 +1,39 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 140%;
+  letter-spacing: .2rem;
+
+  color: $color-gray;
+}
+
+.title-first {
+  color: $color-white;
+
+  &__main {
+    display: block;
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 6rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+    animation: leftToRight 2s ease 1s;
+    backface-visibility: hidden;
+  }
+
+  &__secondary {
+    display: block;
+    font-weight: 200;
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: .5rem;
+
+    animation: rightToLeft 2s ease 1s;
+    backface-visibility: hidden;
+
+    margin-bottom: 6.5rem;
+  }
+}
