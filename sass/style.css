@@ -15,6 +15,8 @@ body {
 
 .container {
   background: #F7F7F7;
+  position: relative;
+  z-index: 0;
 }
 
 body {
@@ -71,6 +73,9 @@ body {
 .title-secondary:hover {
   transform: skewY(2deg) scale(1.1);
   text-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+.title-secondary_white {
+  color: #FFFFFF;
 }
 
 .title-third {
@@ -264,6 +269,12 @@ body {
 
 .section-tours {
   padding-top: 16rem;
+  margin-bottom: 8rem;
+}
+
+.section-feed-back {
+  padding-top: 8rem;
+  position: relative;
 }
 
 .btn:link, .btn:visited {
@@ -493,4 +504,75 @@ body {
   line-height: 7.2rem;
   letter-spacing: 0.2rem;
   margin-bottom: 8.7rem;
+}
+
+.feed-back-card {
+  width: 85%;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  padding: 6rem;
+  transform: skewX(330deg);
+}
+.feed-back-card > * {
+  transform: skewX(-330deg);
+}
+.feed-back-card__img {
+  width: 15rem;
+  height: 15rem;
+  background: green;
+  float: left;
+  border-radius: 100%;
+  shape-outside: circle(50% at 50% 50%);
+  margin-right: 4rem;
+  overflow: hidden;
+  position: relative;
+}
+.feed-back-card__img img {
+  width: 100%;
+  transform: scale(1.2);
+  transition: all 0.5s;
+}
+.feed-back-card__name {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  letter-spacing: 0.2rem;
+  color: #FFFFFF;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.feed-back-card:hover .feed-back-card__name {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.feed-back-card:hover img {
+  transform: scale(1);
+  filter: blur(0.3rem) brightness(70%);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(161, 79, 3, 0.7));
 }/*# sourceMappingURL=style.css.map */
