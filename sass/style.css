@@ -356,7 +356,7 @@ body {
   transform: translateX(1rem);
 }
 .navigation__toggle:checked ~ .navigation__bg {
-  transform: scale(80);
+  transform: scale(100);
 }
 .navigation__toggle:checked ~ .navigation__nav {
   opacity: 1;
