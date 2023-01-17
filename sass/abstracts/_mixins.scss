@@ -19,3 +19,27 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == lab-land {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-screen {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
