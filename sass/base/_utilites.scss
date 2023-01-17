@@ -12,8 +12,16 @@
 
 .mb-5 {
   margin-bottom: 5rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 7rem;
+  }
 }
 
 .mb-8 {
   margin-bottom: 8rem;
+  
+  @include respond(tab-port) {
+    margin-bottom: 5rem;
+  }
 }

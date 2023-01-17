@@ -3,6 +3,10 @@
   background: linear-gradient(115deg, rgba(255,255,255, .9) 0%, rgba(255,255,255, .9) 57%, rgba(161,79,3, .9) 57%, rgba(161,79,3, .9) 100%), url(../img/book-bg.jpg) center / cover no-repeat;
   box-shadow: $box-shadow;
   border-radius: .5rem;
+
+  @include respond(tab-port) {
+    background: linear-gradient(115deg, rgba(255,255,255, .9) 0%, rgba(255,255,255, .9) 507%, rgba(161,79,3, .9) 507%, rgba(161,79,3, .9) 100%), url(../img/book-bg.jpg) center / cover no-repeat;
+  }
 }
 
 .form {
@@ -24,10 +28,16 @@
     } 
   
     &__group:nth-child(4) {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     } 
   }
 
+  @include respond(tab-port) {
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: 3rem;
+  }
+  
   &__label {
     font-weight: 400;
     font-size: $font-size-paragraph;
@@ -50,6 +60,11 @@
     border-bottom: .2rem solid transparent;
     border-radius: .5px;
     width: 75%;
+
+    @include respond(tab-port) {
+      width: 90%;
+      box-shadow: $box-shadow;
+    }
     
     &:focus {
       outline: none;

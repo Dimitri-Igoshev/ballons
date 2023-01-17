@@ -1,5 +1,9 @@
 .section-about {
   margin-bottom: 12rem;
+
+  @include respond(tab-port) {
+    margin-bottom: 40rem;
+  }
 }
 
 .section-adventure {
